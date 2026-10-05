@@ -3,7 +3,7 @@ using Study.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Study3D.MiniGolf
+namespace MiniGolfGame
 {
     public class GolfPlayer : MonoBehaviour
     {
@@ -13,8 +13,8 @@ namespace Study3D.MiniGolf
         public float cycleTime;
 
         [Header("Ref")] 
-        public GolfBall ball;
-        public GolfAimIndicator aimIndicator;
+        public MiniGolfBall ball;
+        public MiniGolfAimIndicator aimIndicator;
         
         private float chargeTime;
         private Camera mainCam;
