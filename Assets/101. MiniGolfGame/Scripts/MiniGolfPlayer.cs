@@ -31,7 +31,7 @@ namespace MiniGolfGame
             aimDirection.y = 0.0f;
             aimDirection.Normalize();
 
-            bool canShoot = ball.IsStopped;
+            bool canShoot = ball.IsStopped && !MiniGolfGameManager.Instance.IsStageCleared;
 
             if (canShoot)
             {
